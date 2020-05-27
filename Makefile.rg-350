@@ -31,7 +31,8 @@ CFLAGS = \
     -mplt \
     -msym32 \
 	-funroll-loops \
-	-fomit-frame-pointer
+	-fomit-frame-pointer \
+	-D_GLIBCXX_USE_CXX11_ABI=0
 
 CXXFLAGS = $(CFLAGS)
 LDFLAGS = $(SDL_LIBS) -lfreetype -lSDL_image -lSDL_ttf -lSDL_gfx -lSDL_mixer -lSDL -lpthread -lopk -lpng -lasound
